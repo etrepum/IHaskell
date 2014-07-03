@@ -2,7 +2,7 @@
 set -e
 
 # Which version of virtualenv to use.
-VIRTUALENV=virtualenv-1.9.1
+VIRTUALENV=virtualenv-1.11.6
 
 # Where to install the virtualenv.
 DESTINATION=$1
@@ -15,4 +15,4 @@ cd $VIRTUALENV
 
 # Create a virtualenv.
 echo "Creating a virtualenv."
-python virtualenv.py $DESTINATION
+python virtualenv.py "$@"
